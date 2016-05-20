@@ -1,4 +1,4 @@
-package aulaJavaBeans;
+package aula34_orientacaoObjetos.javaBeans;
 
 import java.io.Serializable;
 
