@@ -1,10 +1,12 @@
 package listaDeExercicios01;
 
+import java.util.Scanner;
+
 public class ExercicioMedia {
 	
 public static void main(String[] args) {
 		
-		Scanner lerInformacao = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 
 		double nota01;
 		double nota02;
@@ -13,16 +15,16 @@ public static void main(String[] args) {
 		double media;
 
 		System.out.println("Informe a nota do primeiro bimestre: ");
-		nota01 = lerInformacao.nextDouble();
+		nota01 = sc.nextDouble();
 
 		System.out.println("Informe a nota do segundo bimestre: ");
-		nota02 = lerInformacao.nextDouble();
+		nota02 = sc.nextDouble();
 
 		System.out.println("Informe a nota do terceiro bimestre: ");
-		nota03 = lerInformacao.nextDouble();
+		nota03 = sc.nextDouble();
 
 		System.out.println("Informe a nota do quarto bimestre: ");
-		nota04 = lerInformacao.nextDouble();
+		nota04 = sc.nextDouble();
 
 		media = (nota01 + nota02 + nota03 + nota04) / 4;
 
@@ -31,6 +33,8 @@ public static void main(String[] args) {
 		String resultadoMedia = (media > 5) ? "Passou" : "Nao Passou";
 
 		System.out.println("Passou? " + resultadoMedia);
+		
+		sc.close();
 	}
 
 }
