@@ -15,18 +15,18 @@ public class ArrayList {
 		
 		Scanner sc = new Scanner(System.in);
 		ArrayList<String> wweNomes = new ArrayList<String>();
-		wweNomes.add("Roman Reigns");
-		wweNomes.add("Dean Ambrose");
-		wweNomes.add("Dolph Ziggler");
-		wweNomes.add("AJ Styles");
-		wweNomes.add("Star Dust");
-		wweNomes.add("Kevin Owens");
+		wweNomes.add("Roman");
+		wweNomes.add("Dean");
+		wweNomes.add("Dolph");
+		wweNomes.add("AJ");
+		wweNomes.add("Star");
+		wweNomes.add("Kevin");
 		wweNomes.add("Kalisto");
 
 		ArrayList<String> wweNomesMulheres = new ArrayList<String>();
-		wweNomesMulheres.add("Sasha banks");
+		wweNomesMulheres.add("Sasha");
 		wweNomesMulheres.add("Charlotte");
-		wweNomesMulheres.add("Becky Linch");
+		wweNomesMulheres.add("Becky");
 		
 		System.out.println("digite um nome que esteja na lista: ");
 		String valor = sc.next();
@@ -45,13 +45,13 @@ public class ArrayList {
 
 		if (contem) {
 			int posicao = wweNomes.indexOf(valor);
-			System.out.println(wweNomes.get(posicao));
+			System.out.println("O nome " + wweNomes.get(posicao) + " existe na lista !");
 		} else {
 			System.out.println("o nome nao esta na lista");
 		}
 		System.out.println();
-		
-		sc.close();
+
+			sc.close();
 	}
 
 }
