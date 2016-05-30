@@ -8,7 +8,7 @@ public static void main(String[] args) {
 		Integer numero02 = 20;
 		String resultado = "";
 
-		if(numero02 == numero02){
+		if(numero02 == numero01){
 			resultado = "Os numeros sao iguais";
 		}else {
 			resultado = "Os numeros sao diferentes";

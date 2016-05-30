@@ -9,7 +9,7 @@ import java.util.ArrayList;
 	número:exercício 11
 */
 
-public class ArrayList {
+public class ExercicioArrayList {
 
 	public static void main(String[] args) {
 		
