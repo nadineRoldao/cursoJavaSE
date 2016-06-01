@@ -20,7 +20,6 @@ public class Desafio{
 	
 		//declarações
 		Random rd = new Random();
-		String resultado;
 	
 		//lista
 		String[] lutador01 = 
