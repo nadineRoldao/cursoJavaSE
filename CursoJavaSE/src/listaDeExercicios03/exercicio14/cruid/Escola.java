@@ -38,6 +38,7 @@ public class Escola implements Serializable {
 			id = EscolaUtil.gerarID();
 		}
 		
+		aluno.setNome(nome);
 		aluno.setCodigoAluno(id);
 		aluno.setIdade(idade);
 		aluno.setEndereco(endereco);

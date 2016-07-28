@@ -2,24 +2,25 @@ package listaDeExercicios03.exercicio14.cruid;
 
 import java.io.Serializable;
 
-public class Aluno implements Serializable{
+public class Aluno implements Serializable {
 
-	//implementando a interface serializable
+	// implementando a interface serializable
 	private static final long serialVersionUID = 1L;
-	
-	//atributos da classe Aluno
+
+	// atributos da classe Aluno
 	private String nome;
 	private int idade;
 	private Endereco endereco;
 	private int codigoAluno;
 	private boolean statusMatricula;
-	
+
 	public Aluno() {
-		
+
 	}
 
-	//construtor auxiliar
-	public Aluno(String nome, int idade, Endereco endereco, int codigoAluno, boolean statusMatricula) {super();
+	// construtor auxiliar
+	public Aluno(String nome, int idade, Endereco endereco, int codigoAluno, boolean statusMatricula) {
+		super();
 		this.nome = nome;
 		this.idade = idade;
 		this.endereco = endereco;
@@ -27,7 +28,7 @@ public class Aluno implements Serializable{
 		this.statusMatricula = statusMatricula;
 	}
 
-	//Getters and Setters
+	// Getters and Setters
 	public String getNome() {
 		return nome;
 	}
@@ -67,8 +68,11 @@ public class Aluno implements Serializable{
 	public void setStatusMatricula(boolean statusMatricula) {
 		this.statusMatricula = statusMatricula;
 	}
-	
-	
-	
-	
+
+	@Override
+	public String toString() {
+		return "Aluno [nome=" + nome + ", idade=" + idade + ", endereco=" + endereco + ", codigoAluno=" + codigoAluno
+				+ ", statusMatricula=" + statusMatricula + "]";
+	}
+
 }

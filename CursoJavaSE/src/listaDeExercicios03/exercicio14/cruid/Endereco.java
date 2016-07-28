@@ -2,12 +2,12 @@ package listaDeExercicios03.exercicio14.cruid;
 
 import java.io.Serializable;
 
-public class Endereco implements Serializable{
+public class Endereco implements Serializable {
 
-	//implementando a interface serializable
+	// implementando a interface serializable
 	private static final long serialVersionUID = 1L;
-		
-	//atributos da classe trabalhador
+
+	// atributos da classe trabalhador
 	private String cep;
 	private Logradouro logradouro;
 	private String nome;
@@ -15,15 +15,14 @@ public class Endereco implements Serializable{
 	private String cidade;
 	private String estado;
 	private String complemento;
-	
-	
-	
+
 	public Endereco() {
-		
+
 	}
 
-	//construtor auxiliar
-	public Endereco(String cep, Logradouro logradouro, String nome, int numero, String cidade, String estado,String complemento) {
+	// construtor auxiliar
+	public Endereco(String cep, Logradouro logradouro, String nome, int numero, String cidade, String estado,
+			String complemento) {
 		this.cep = cep;
 		this.logradouro = logradouro;
 		this.nome = nome;
@@ -33,7 +32,7 @@ public class Endereco implements Serializable{
 		this.complemento = complemento;
 	}
 
-	//Getters and Setters
+	// Getters and Setters
 	public String getCep() {
 		return cep;
 	}
@@ -89,9 +88,11 @@ public class Endereco implements Serializable{
 	public void setComplemento(String complemento) {
 		this.complemento = complemento;
 	}
-	
-	
-	
-	
-	
+
+	@Override
+	public String toString() {
+		return "Endereco [cep=" + cep + ", logradouro=" + logradouro + ", nome=" + nome + ", numero=" + numero
+				+ ", cidade=" + cidade + ", estado=" + estado + ", complemento=" + complemento + "]";
+	}
+
 }

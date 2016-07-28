@@ -10,15 +10,20 @@ public class EscolaTeste {
 		Escola ec = new Escola(null, "colegio sao paulo", e);
 		ec.adicionarAluno("Julia", 14, ed, true);
 		ec.adicionarAluno("Nadine", 13, e, false);
+		ec.adicionarAluno("Lucas", 14, ed, false);
+		ec.adicionarAluno("Raphael", 13, e, true);
+		ec.adicionarAluno("Giovanna", 13, ed, true);
 		
-		int codigoAluno = ec.getAlunos().get(0).getCodigoAluno();
+		int codigoAluno = ec.getAlunos().get(1).getCodigoAluno();
 		
 		ec.atualizarEnderecoAluno(codigoAluno, e);
 		
 		ec.alunosMatricula();
 		
-		ec.removerAluno(codigoAluno);
+		Aluno aluno = ec.pesquisarAluno(codigoAluno);
+		System.out.println(aluno.toString());
 		
+		ec.removerAluno(codigoAluno);
 		
 	}
 	
