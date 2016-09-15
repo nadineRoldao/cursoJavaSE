@@ -1,4 +1,4 @@
-package exceptions;
+package aula39.exceptions;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
